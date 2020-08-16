@@ -1,0 +1,22 @@
+[
+  {
+    "itemName": "NCN-W",
+    "itemColor": "#c4b1ae",
+    "itemHeight": "1"
+  },
+  {
+    "itemName": "NCN-S",
+    "itemColor": "#a7c4c2",
+    "itemHeight": "1"
+  },
+  {
+    "itemName": "Slingshot Switch",
+    "itemColor": "#ffb85c",
+    "itemHeight": "1"
+  },
+  {
+    "itemName": "Login",
+    "itemColor": "#eef4d4",
+    "itemHeight": "2"
+  }
+]

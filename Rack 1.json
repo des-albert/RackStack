@@ -1,0 +1,338 @@
+[
+  {
+    "id": 2140262018,
+    "parentId": "Rack 1",
+    "itemName": "42 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1241241810,
+    "parentId": "Rack 1",
+    "itemName": "41 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 833768892,
+    "parentId": "Rack 1",
+    "itemName": "40 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 139426504,
+    "parentId": "Rack 1",
+    "itemName": "39 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 2036027549,
+    "parentId": "Rack 1",
+    "itemName": "38 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1861298732,
+    "parentId": "Rack 1",
+    "itemName": "Slingshot Switch",
+    "itemColor": "#ffb85c",
+    "itemHeight": 1,
+    "itemIndex": 2
+  },
+  {
+    "id": 1292715491,
+    "parentId": "Rack 1",
+    "itemName": "Slingshot Switch",
+    "itemColor": "#ffb85c",
+    "itemHeight": 1,
+    "itemIndex": 2
+  },
+  {
+    "id": 1047003056,
+    "parentId": "Rack 1",
+    "itemName": "35 Blank",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 488349529,
+    "parentId": "Rack 1",
+    "itemName": "Slingshot Switch",
+    "itemColor": "#ffb85c",
+    "itemHeight": 1,
+    "itemIndex": 2
+  },
+  {
+    "id": 2061264540,
+    "parentId": "Rack 1",
+    "itemName": "33 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1566115449,
+    "parentId": "Rack 1",
+    "itemName": "32 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1556277277,
+    "parentId": "Rack 1",
+    "itemName": "31 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 492983691,
+    "parentId": "Rack 1",
+    "itemName": "30 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 76757053,
+    "parentId": "Rack 1",
+    "itemName": "29 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 292330520,
+    "parentId": "Rack 1",
+    "itemName": "28 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1520765992,
+    "parentId": "Rack 1",
+    "itemName": "27 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1432671482,
+    "parentId": "Rack 1",
+    "itemName": "26 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1219185851,
+    "parentId": "Rack 1",
+    "itemName": "25 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1037211114,
+    "parentId": "Rack 1",
+    "itemName": "24 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1340344884,
+    "parentId": "Rack 1",
+    "itemName": "23 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1020576822,
+    "parentId": "Rack 1",
+    "itemName": "22 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 772311427,
+    "parentId": "Rack 1",
+    "itemName": "21 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 123479149,
+    "parentId": "Rack 1",
+    "itemName": "20 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1753623320,
+    "parentId": "Rack 1",
+    "itemName": "19 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1919530826,
+    "parentId": "Rack 1",
+    "itemName": "18 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 415726613,
+    "parentId": "Rack 1",
+    "itemName": "17 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 2128497708,
+    "parentId": "Rack 1",
+    "itemName": "16 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 668562948,
+    "parentId": "Rack 1",
+    "itemName": "15 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 414537298,
+    "parentId": "Rack 1",
+    "itemName": "14 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1001498245,
+    "parentId": "Rack 1",
+    "itemName": "13 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 931279603,
+    "parentId": "Rack 1",
+    "itemName": "12 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1535581009,
+    "parentId": "Rack 1",
+    "itemName": "11 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1764934069,
+    "parentId": "Rack 1",
+    "itemName": "10 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1593952152,
+    "parentId": "Rack 1",
+    "itemName": "9 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 2041733921,
+    "parentId": "Rack 1",
+    "itemName": "8 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 437035733,
+    "parentId": "Rack 1",
+    "itemName": "7 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1707927368,
+    "parentId": "Rack 1",
+    "itemName": "6 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 874565998,
+    "parentId": "Rack 1",
+    "itemName": "5 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 1583417248,
+    "parentId": "Rack 1",
+    "itemName": "4 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 562306227,
+    "parentId": "Rack 1",
+    "itemName": "3 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 594565484,
+    "parentId": "Rack 1",
+    "itemName": "2 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  },
+  {
+    "id": 292112333,
+    "parentId": "Rack 1",
+    "itemName": "1 Blank ",
+    "itemColor": "#b4ada3",
+    "itemHeight": 1,
+    "itemIndex": -1
+  }
+]

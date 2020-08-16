@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.db.RackStack">
+   <children>
+      <Button fx:id="buttonQuit" layoutX="52.0" layoutY="772.0" mnemonicParsing="false" onAction="#ButtonQuitOnAction" text="Quit" />
+      <Button fx:id="buttonAddRack" layoutX="39.0" layoutY="516.0" mnemonicParsing="false" onAction="#ButtonAddRackAction" text="Add Rack" />
+      <Button fx:id="buttonLoadParts" layoutX="36.0" layoutY="557.0" mnemonicParsing="false" onAction="#ButtonLoadPartsOnAction" text="Load Parts" />
+      <ChoiceBox fx:id="choiceRackSize" layoutX="16.0" layoutY="474.0" prefHeight="25.0" prefWidth="136.0" />
+      <Button fx:id="buttonSave" layoutX="86.0" layoutY="724.0" mnemonicParsing="false" onAction="#ButtonSaveAction" text="Save" />
+      <ImageView fx:id="imageViewTrash" fitHeight="74.0" fitWidth="72.0" layoutX="48.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/trash.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="listViewParts" layoutX="36.0" layoutY="20.0" onDragDetected="#partDragDetected" prefHeight="350.0" prefWidth="90.0" />
+      <ListView fx:id="listViewTotal" layoutX="138.0" layoutY="20.0" onDragDetected="#partDragDetected" prefHeight="350.0" prefWidth="30.0" />
+      <Button fx:id="buttonLoad" layoutX="28.0" layoutY="724.0" mnemonicParsing="false" onAction="#ButtonLoadAction" text="Load" />
+      <Label layoutX="17.0" layoutY="617.0" styleClass="label-title" stylesheets="@../../css/style.css" text="RackStack" />
+      <Label layoutX="60.0" layoutY="686.0" styleClass="label-plain" stylesheets="@../../css/style.css" text="Files" />
+   </children>
+</AnchorPane>
