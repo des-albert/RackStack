@@ -1,6 +1,7 @@
 package org.db;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class RackItem implements Serializable {
     private final int id;
@@ -19,6 +20,13 @@ public class RackItem implements Serializable {
         itemIndex = -1;
     }
 
+    RackItem( Part part) {
+        id = hashCode();
+        parentId = null;
+        itemName = part.getItemName();
+        itemColor = part.getItemColor();
+        itemHeight = part.getItemHeight();
+    }
 
     public int getId() { return id; }
     public String getParentId() { return parentId; }

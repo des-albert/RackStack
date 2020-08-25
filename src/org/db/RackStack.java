@@ -18,12 +18,10 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Optional;
 
 import static com.google.gson.JsonParser.parseReader;
@@ -66,7 +64,9 @@ public class RackStack {
   private static final double RACK_WIDTH = 100.0;
   private int rackQty = 0;
   private int rackSize;
-  private final HashMap<Integer, RackItem> partHashMap = new HashMap<>();
+  private final HashMap<Integer, RackItem> itemHashMap = new HashMap<>();
+  private final HashMap<String, Part> partHashMap = new HashMap<>();
+  private HashMap<String, Integer> rackTotal;
   private final ObservableList<String> rackOptions = FXCollections.observableArrayList("42 U", "48 U");
 
   public void initialize() {
@@ -139,7 +139,7 @@ public class RackStack {
       String parent = listViewRack.getId();
       for (int i = 0; i < rackSize; i++) {
         RackItem ri = new RackItem(parent, rackSize - i + " Blank ", "#b4ada3", 1);
-        partHashMap.put(ri.getId(), ri);
+        itemHashMap.put(ri.getId(), ri);
         rackData.add(ri);
       }
       createRack(listViewRack, rackData);
@@ -238,21 +238,42 @@ public class RackStack {
         }
     }
 
-    for (Node rack : rackNodes) {
-      JsonArray jsonArray = new JsonArray();
-      try {
-        FileWriter fw = new FileWriter(rack.getId() + ".json");
-        ((ListView<?>) rack).getItems().forEach((element) -> {
-          JsonElement json = gson.toJsonTree(element);
-          jsonArray.add(json);
-        });
-        gson.toJson(jsonArray, fw);
-        fw.close();
+    try {
+      PrintStream ps = new PrintStream( "bom.csv ");
 
-      } catch (IOException e) {
-        e.printStackTrace();
+      for (Node rack : rackNodes) {
+        ps.println(rack.getId());
+        rackTotal = new HashMap<>();
+        JsonArray jsonArray = new JsonArray();
+        try {
+          FileWriter fw = new FileWriter(rack.getId() + ".json");
+          ((ListView<?>) rack).getItems().forEach(element -> {
+            String item = ((RackItem) element).getItemName();
+            if (!item.contains("Blank")) {
+              rackTotal.merge(item, 1, Integer::sum);
+            }
+            JsonElement json = gson.toJsonTree(element);
+            jsonArray.add(json);
+          });
+          rackTotal.forEach((key, value) -> {
+            List<PartBom> items = (partHashMap.get(key)).getParts();
+            for (PartBom item : items) {
+                ps.println(value * item.getBomQty() + "," + item.getBomSKU() + "," + item.getBomDesc() );
+            }
+          });
+          gson.toJson(jsonArray, fw);
+          fw.close();
+
+        } catch (IOException e) {
+          e.printStackTrace();
+        }
       }
+      ps.close();
+
+    } catch (IOException e) {
+      e.printStackTrace();
     }
+
   }
 
   public void ButtonLoadAction() {
@@ -270,7 +291,7 @@ public class RackStack {
 
         while (jsonReader.hasNext()) {
           RackItem item = gson.fromJson(parseReader(jsonReader), RackItem.class);
-          partHashMap.put(item.getId(), item);
+          itemHashMap.put(item.getId(), item);
           rackData.add(item);
           if (item.getItemIndex() != -1) {
             RackTotal source = listViewTotal.getItems().get(item.getItemIndex());
@@ -297,8 +318,6 @@ public class RackStack {
       } catch (IOException e) {
         e.printStackTrace();
       }
-
-
     }
   }
 
@@ -318,8 +337,10 @@ public class RackStack {
       jsonReader.beginArray();
 
       while (jsonReader.hasNext()) {
-        RackItem item = gson.fromJson(parseReader(jsonReader), RackItem.class);
+        Part part = gson.fromJson(parseReader(jsonReader), Part.class);
 
+        RackItem item = new RackItem(part);
+        partHashMap.put(part.getItemName(), part);
         listViewParts.getItems().add(item);
         listViewTotal.getItems().add(new RackTotal(item.getItemColor()));
         ++partCount;
@@ -360,9 +381,10 @@ public class RackStack {
       if (event.getDragboard().hasContent(dfPart)) {
         int sourceId = (int) event.getDragboard().getContent(dfPart);
         int sourceIndex = (int) event.getDragboard().getContent(dfIndex);
-        RackItem source = partHashMap.get(sourceId);
+        RackItem source = itemHashMap.get(sourceId);
         source.setItemName(rackSize - sourceIndex + " Blank");
         source.setItemColor("#b4ada3");
+        itemHashMap.remove(sourceId);
 
         anchor.getChildren().forEach((node) -> {
           if (node.getClass() == ListView.class) {
@@ -372,7 +394,7 @@ public class RackStack {
           }
         });
         RackTotal total = listViewTotal.getItems().get(source.getItemIndex());
-        total.decrement(1);
+        total.decrement();
         listViewTotal.refresh();
         source.setItemIndex(-1);
       }

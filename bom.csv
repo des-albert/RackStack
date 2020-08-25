@@ -1,0 +1,14 @@
+Rack 1
+3,JL762A,Aruba 6300M 48-port 1GbE and 4-port SFP56 Power-to-Port 2 Fan Trays 1 PSU Bundle
+3,JL760A,Aruba X371 12VDC 250W 100-240VAC Power-to-Port Power Supply
+3,JL483B,Aruba X474 4-post Rack Kit
+4,R4L00A,HPE Cray EX Worker Server Node
+8,R4K46A,HPE Slingshot 200Gb 1-port PCIe Adapter for Cray System
+4,R5Q43A,HPE Cray System Management for Cray Supercomputers FIO Software
+4,R5R45A,HPE Cray Operating System for Cray Supercomputers FIO Software
+3,R4K41A,null
+Rack 2
+4,R4L01A,HPE Cray EX Utility Storage Server Node
+32,P18430-H21,HPE 7.68TB SATA 6G Read Intensive SFF (2.5in) SC 3yr Wty Multi Vendor SSD
+4,R5Q43A,HPE Cray System Management for Cray Supercomputers FIO Software
+4,R5R45A,HPE Cray Operating System for Cray Supercomputers FIO Software
