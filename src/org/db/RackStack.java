@@ -17,12 +17,13 @@ import javafx.scene.input.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 import static com.google.gson.JsonParser.parseReader;
 
@@ -38,7 +39,7 @@ public class RackStack {
   @FXML
   ListView<RackTotal> listViewTotal = new ListView<>();
   @FXML
-  Button buttonQuit, buttonAddRack, buttonLoadParts, buttonLoad, buttonSave;
+  Button buttonQuit, buttonAddRack, buttonLoadParts, buttonLoad, buttonSave, buttonLoadExcel;
   @FXML
   ImageView imageViewTrash;
 
@@ -67,7 +68,7 @@ public class RackStack {
   private final HashMap<Integer, RackItem> itemHashMap = new HashMap<>();
   private final HashMap<String, Part> partHashMap = new HashMap<>();
   private HashMap<String, Integer> rackTotal;
-  private final ObservableList<String> rackOptions = FXCollections.observableArrayList("42 U", "48 U");
+  private final ObservableList<String> rackOptions = FXCollections.observableArrayList("42 U", "48 U", "50 U");
 
   public void initialize() {
 
@@ -118,10 +119,11 @@ public class RackStack {
 
     String rackSizeSelect = choiceRackSize.getSelectionModel().getSelectedItem();
     if (rackSizeSelect != null) {
-      if (rackSizeSelect.equals("42 U"))
-        rackSize = 42;
-      else
-        rackSize = 48;
+      switch (rackSizeSelect) {
+        case "42 U" -> rackSize = 42;
+        case "48 U" -> rackSize = 48;
+        case "50 U" -> rackSize = 50;
+      }
 
       ListView<RackItem> listViewRack = new ListView<>();
       listViewRack.setPrefWidth(RACK_WIDTH);
@@ -227,6 +229,7 @@ public class RackStack {
   public void ButtonSaveAction() {
     Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
+    /* Locate Children with Id = Rack */
 
     ObservableList<Node> nodes = anchor.getChildren();
     ArrayList<Node> rackNodes = new ArrayList<>();
@@ -239,7 +242,7 @@ public class RackStack {
     }
 
     try {
-      PrintStream ps = new PrintStream( "bom.csv ");
+      PrintStream ps = new PrintStream("bom.csv ");
 
       for (Node rack : rackNodes) {
         ps.println(rack.getId());
@@ -249,16 +252,17 @@ public class RackStack {
           FileWriter fw = new FileWriter(rack.getId() + ".json");
           ((ListView<?>) rack).getItems().forEach(element -> {
             String item = ((RackItem) element).getItemName();
-            if (!item.contains("Blank")) {
+            if (!item.contains("Blank") && !item.equals(" ")) {
               rackTotal.merge(item, 1, Integer::sum);
             }
             JsonElement json = gson.toJsonTree(element);
             jsonArray.add(json);
           });
           rackTotal.forEach((key, value) -> {
-            List<PartBom> items = (partHashMap.get(key)).getParts();
+            ArrayList<PartBom> items = (partHashMap.get(key)).getParts();
+            ps.println(key);
             for (PartBom item : items) {
-                ps.println(value * item.getBomQty() + "," + item.getBomSKU() + "," + item.getBomDesc() );
+              ps.println(value * item.getBomQty() + "," + item.getBomSKU() + "," + item.getBomDesc());
             }
           });
           gson.toJson(jsonArray, fw);
@@ -403,5 +407,52 @@ public class RackStack {
 
     });
 
+  }
+
+  public void ButtonLoadExcelOnAction() {
+    String FILE_NAME = "Parts.xlsx";
+    Part part;
+    int partCount = 0;
+    try {
+      FileInputStream excelFile = new FileInputStream(new File(FILE_NAME));
+      Workbook wb = new XSSFWorkbook(excelFile);
+      Sheet sheet = wb.getSheetAt(0);
+      Iterator<Row> rowIterator = sheet.iterator();
+
+      while (rowIterator.hasNext()) {
+        Row row = rowIterator.next();
+        part = new Part(
+                row.getCell(0).getStringCellValue(),
+                row.getCell(1).getStringCellValue(),
+                (int) row.getCell(2).getNumericCellValue()
+        );
+        int count = (int) row.getCell(3).getNumericCellValue();
+        for (int i = 0; i < count; i++) {
+          row = rowIterator.next();
+          PartBom bom = new PartBom(
+                  (int) row.getCell(0).getNumericCellValue(),
+                  row.getCell(1).getStringCellValue(),
+                  row.getCell(2).getStringCellValue()
+          );
+          part.setBomItems(bom);
+        }
+
+        RackItem item = new RackItem(part);
+        partHashMap.put(part.getItemName(), part);
+        listViewParts.getItems().add(item);
+        listViewTotal.getItems().add(new RackTotal(item.getItemColor()));
+        ++partCount;
+      }
+
+      excelFile.close();
+
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    }
+
+    listViewParts.setFixedCellSize(ROW_HEIGHT);
+    listViewParts.setPrefHeight(ROW_HEIGHT * partCount + 2.0);
+    listViewTotal.setFixedCellSize(ROW_HEIGHT);
+    listViewTotal.setPrefHeight(ROW_HEIGHT * partCount + 2.0);
   }
 }

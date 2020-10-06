@@ -1,14 +1,374 @@
 Rack 1
-3,JL762A,Aruba 6300M 48-port 1GbE and 4-port SFP56 Power-to-Port 2 Fan Trays 1 PSU Bundle
-3,JL760A,Aruba X371 12VDC 250W 100-240VAC Power-to-Port Power Supply
-3,JL483B,Aruba X474 4-post Rack Kit
-4,R4L00A,HPE Cray EX Worker Server Node
-8,R4K46A,HPE Slingshot 200Gb 1-port PCIe Adapter for Cray System
-4,R5Q43A,HPE Cray System Management for Cray Supercomputers FIO Software
-4,R5R45A,HPE Cray Operating System for Cray Supercomputers FIO Software
-3,R4K41A,null
+GW DVS
+2,P19878-B21,HPE Apollo n2600 Gen10+ SFF CTO Chassis
+2,P19878-B21  0D1,Factory integrated
+2,P19878-B21  ABA,U.S. - English localization
+8,P21163-B21,HPE XL225n Gen10+ 1U Node CTO Svr
+8,P21163-B21  0D1,Factory integrated
+8,P21163-B21  ABA,U.S. - English localization
+8,P24269-L21,HPE XL225n Gen10+ AMD EPYC 7302P FIO Kit
+64,P07644-H21,HPE 32GB 2Rx8 PC4-3200AA-R Smart Kit
+64,P07644-H21  0D1,Factory integrated
+8,P20260-B21,HPE XL2xxn Gen10+ LP Left Riser Kit
+8,P20260-B21  0D1,Factory integrated
+8,P23664-H21,HPE IB HDR/EN 200Gb 1p QSFP56 Adptr
+8,P23664-H21  0D1,Factory integrated
+8,P20264-B21,HPE XL22xn G10+ LP CPU2 Right Riser Kit
+8,P20264-B21  0D1,Factory integrated
+8,R4K46A,HPE Slingshot 200Gb Card for Cray System
+8,R4K46A      0D1,Factory integrated
+4,876935-B21,HPE 1800W - 2200W FS Plat Ht Plg PS Kit
+4,876935-B21  0D1,Factory integrated
+4,Q7F59A,HPE Jmp Crd C15 US 0.76m Blk
+4,Q7F59A      0D1,Factory integrated
+2,P20283-B21,HPE n2x00 Gen10+ Flex Slot PIB
+2,P20283-B21  0D1,Factory integrated
+2,P25006-B21,HPE n2x00 Gen10+ 2U Shelf Mount Rail Kit
+2,P25006-B21  0D1,Factory integrated
+KVM
+1,AF651A,HPE 0x1x8 G3 KVM Console Switch
+1,AF651A      0D1,Factory integrated
+1,AF644A,HPE LCD 8500 1U Console INTL Kit
+1,AF644A      0D1,Factory integrated
+1,AF655A,HPE KVM USB 8-pack Adapter
+1,AF655A      0D1,Factory integrated
+NCN-W
+12,R4L00A,HPE Cray EX Worker Server Node
+12,R4L00A      0D1,Factory integrated
+24,R4K46A,HPE Slingshot 200Gb Card for Cray System
+24,R4K46A      0D1,Factory integrated
+12,R5Q43A,HPE Cray Sys Mgmt Supercomp FIO SW
+12,R5R45A,HPE Cray OS Supercomp FIO SW
+Login
+4,P14278-B21,HPE DL385 Gen10+ 8SFF CTO Svr
+4,P14278-B21  0D1,Factory integrated
+4,P14278-B21  ABA,U.S. - English localization
+4,R4L68A,HPE Cray EX User Access Node FIO Config
+4,P17546-L21,HPE DL385 Gen10+ AMD EPYC 7702 FIO Kit
+4,P17546-B21,HPE DL385 Gen10+ AMD EPYC 7702 Kit
+4,P17546-B21  0D1,Factory integrated
+64,P07650-B21,HPE 64GB 2Rx4 PC4-3200AA-R Smart Kit
+64,P07650-B21  0D1,Factory integrated
+4,P14590-B21,HPE DL38X Gen10+ 2x16 Slot 2/3 Riser Kit
+4,P14590-B21  0D1,Factory integrated
+4,P23664-B21,HPE IB HDR/EN 200Gb 1p QSFP56 Adptr
+4,P23664-B21  0D1,Factory integrated
+4,R4K46A,HPE Slingshot 200Gb Card for Cray System
+4,R4K46A      0D1,Factory integrated
+4,P01366-B21,HPE 96W Smart Storage Battery 145mm Cbl
+4,P01366-B21  0D1,Factory integrated
+4,804331-B21,HPE Smart Array P408i-a SR Gen10 Ctrlr
+4,804331-B21  0D1,Factory integrated
+4,P08449-B21,INT I350 1GbE 4p BASE-T OCP3 Adptr
+4,P08449-B21  0D1,Factory integrated
+4,P14608-B21,HPE DL38X Gen10+ Max Perf Fan Kit
+4,P14608-B21  0D1,Factory integrated
+8,865414-B21,HPE 800W FS Plat Ht Plg LH Pwr Sply Kit
+8,865414-B21  0D1,Factory integrated
+4,R5Q43A,HPE Cray Sys Mgmt Supercomp FIO SW
+4,R5R45A,HPE Cray OS Supercomp FIO SW
+4,R6A49A,HPE Cray PE x86 FIO SW
+4,P22018-B21,HPE DL38X Gen10+ 2U SFF EI Rail Kit
+4,P22018-B21  0D1,Factory integrated
+NCN-S 7.68 TB
+6,R4L01A,HPE Cray EX Utility Storage Server Node
+6,R4L01A      0D1,Factory integrated
+48,P18430-H21,HPE 7.68TB SATA RI SFF SC MV SSD
+48,P18430-H21  0D1,Factory integrated
+6,R5Q43A,HPE Cray Sys Mgmt Supercomp FIO SW
+6,R5R45A,HPE Cray OS Supercomp FIO SW
+Aruba 6300M
+2,JL762A,Aruba 6300M 48G Pwr2Prt 2F 1PS Bdl
+2,JL762A      0D1,Factory integrated
+2,JL762A      ABA,U.S. - English localization
+2,JL760A,Aruba X371 12VDC 250W Pwr2Prt PS
+2,JL760A      0D1,Factory integrated
+2,JL760A      B2B,JmpCbl-NA/JP/TW
+Slingshot 
+4,R4K41A,HPE Slingshot 1U Switch for Cray System
+4,R4K41A      0D1,Factory integrated
 Rack 2
-4,R4L01A,HPE Cray EX Utility Storage Server Node
-32,P18430-H21,HPE 7.68TB SATA 6G Read Intensive SFF (2.5in) SC 3yr Wty Multi Vendor SSD
-4,R5Q43A,HPE Cray System Management for Cray Supercomputers FIO Software
-4,R5R45A,HPE Cray Operating System for Cray Supercomputers FIO Software
+GW DVS
+1,P19878-B21,HPE Apollo n2600 Gen10+ SFF CTO Chassis
+1,P19878-B21  0D1,Factory integrated
+1,P19878-B21  ABA,U.S. - English localization
+4,P21163-B21,HPE XL225n Gen10+ 1U Node CTO Svr
+4,P21163-B21  0D1,Factory integrated
+4,P21163-B21  ABA,U.S. - English localization
+4,P24269-L21,HPE XL225n Gen10+ AMD EPYC 7302P FIO Kit
+32,P07644-H21,HPE 32GB 2Rx8 PC4-3200AA-R Smart Kit
+32,P07644-H21  0D1,Factory integrated
+4,P20260-B21,HPE XL2xxn Gen10+ LP Left Riser Kit
+4,P20260-B21  0D1,Factory integrated
+4,P23664-H21,HPE IB HDR/EN 200Gb 1p QSFP56 Adptr
+4,P23664-H21  0D1,Factory integrated
+4,P20264-B21,HPE XL22xn G10+ LP CPU2 Right Riser Kit
+4,P20264-B21  0D1,Factory integrated
+4,R4K46A,HPE Slingshot 200Gb Card for Cray System
+4,R4K46A      0D1,Factory integrated
+2,876935-B21,HPE 1800W - 2200W FS Plat Ht Plg PS Kit
+2,876935-B21  0D1,Factory integrated
+2,Q7F59A,HPE Jmp Crd C15 US 0.76m Blk
+2,Q7F59A      0D1,Factory integrated
+1,P20283-B21,HPE n2x00 Gen10+ Flex Slot PIB
+1,P20283-B21  0D1,Factory integrated
+1,P25006-B21,HPE n2x00 Gen10+ 2U Shelf Mount Rail Kit
+1,P25006-B21  0D1,Factory integrated
+NCN-M
+2,R4K99A,HPE Cray EX Master Server Node
+2,R4K99A      0D1,Factory integrated
+2,R5Q43A,HPE Cray Sys Mgmt Supercomp FIO SW
+2,R5R45A,HPE Cray OS Supercomp FIO SW
+Aruba 6410
+1,R0X27A,Aruba 6410 Swch
+1,R0X27A      0D1,Factory integrated
+1,R0X31A,Aruba 6400 Management Module
+1,R0X31A      0D1,Factory integrated
+3,R0X44A,Aruba 6400 48p 10G/25G SFP28 Mod
+3,R0X44A      0D1,Factory integrated
+5,R0X45A,Aruba 6400 12p 40G/100G QSFP28 Mod
+5,R0X45A      0D1,Factory integrated
+2,R0X35A,Aruba 6400 1800W PS/C16 Accessory
+2,R0X35A      0D1,Factory integrated
+2,R0X35A      ABA,U.S. - English localization
+NCN-W
+10,R4L00A,HPE Cray EX Worker Server Node
+10,R4L00A      0D1,Factory integrated
+20,R4K46A,HPE Slingshot 200Gb Card for Cray System
+20,R4K46A      0D1,Factory integrated
+10,R5Q43A,HPE Cray Sys Mgmt Supercomp FIO SW
+10,R5R45A,HPE Cray OS Supercomp FIO SW
+Login
+4,P14278-B21,HPE DL385 Gen10+ 8SFF CTO Svr
+4,P14278-B21  0D1,Factory integrated
+4,P14278-B21  ABA,U.S. - English localization
+4,R4L68A,HPE Cray EX User Access Node FIO Config
+4,P17546-L21,HPE DL385 Gen10+ AMD EPYC 7702 FIO Kit
+4,P17546-B21,HPE DL385 Gen10+ AMD EPYC 7702 Kit
+4,P17546-B21  0D1,Factory integrated
+64,P07650-B21,HPE 64GB 2Rx4 PC4-3200AA-R Smart Kit
+64,P07650-B21  0D1,Factory integrated
+4,P14590-B21,HPE DL38X Gen10+ 2x16 Slot 2/3 Riser Kit
+4,P14590-B21  0D1,Factory integrated
+4,P23664-B21,HPE IB HDR/EN 200Gb 1p QSFP56 Adptr
+4,P23664-B21  0D1,Factory integrated
+4,R4K46A,HPE Slingshot 200Gb Card for Cray System
+4,R4K46A      0D1,Factory integrated
+4,P01366-B21,HPE 96W Smart Storage Battery 145mm Cbl
+4,P01366-B21  0D1,Factory integrated
+4,804331-B21,HPE Smart Array P408i-a SR Gen10 Ctrlr
+4,804331-B21  0D1,Factory integrated
+4,P08449-B21,INT I350 1GbE 4p BASE-T OCP3 Adptr
+4,P08449-B21  0D1,Factory integrated
+4,P14608-B21,HPE DL38X Gen10+ Max Perf Fan Kit
+4,P14608-B21  0D1,Factory integrated
+8,865414-B21,HPE 800W FS Plat Ht Plg LH Pwr Sply Kit
+8,865414-B21  0D1,Factory integrated
+4,R5Q43A,HPE Cray Sys Mgmt Supercomp FIO SW
+4,R5R45A,HPE Cray OS Supercomp FIO SW
+4,R6A49A,HPE Cray PE x86 FIO SW
+4,P22018-B21,HPE DL38X Gen10+ 2U SFF EI Rail Kit
+4,P22018-B21  0D1,Factory integrated
+NCN-S 7.68 TB
+8,R4L01A,HPE Cray EX Utility Storage Server Node
+8,R4L01A      0D1,Factory integrated
+64,P18430-H21,HPE 7.68TB SATA RI SFF SC MV SSD
+64,P18430-H21  0D1,Factory integrated
+8,R5Q43A,HPE Cray Sys Mgmt Supercomp FIO SW
+8,R5R45A,HPE Cray OS Supercomp FIO SW
+Aruba 6300M
+2,JL762A,Aruba 6300M 48G Pwr2Prt 2F 1PS Bdl
+2,JL762A      0D1,Factory integrated
+2,JL762A      ABA,U.S. - English localization
+2,JL760A,Aruba X371 12VDC 250W Pwr2Prt PS
+2,JL760A      0D1,Factory integrated
+2,JL760A      B2B,JmpCbl-NA/JP/TW
+Slingshot 
+4,R4K41A,HPE Slingshot 1U Switch for Cray System
+4,R4K41A      0D1,Factory integrated
+Rack 3
+GW DVS
+1,P19878-B21,HPE Apollo n2600 Gen10+ SFF CTO Chassis
+1,P19878-B21  0D1,Factory integrated
+1,P19878-B21  ABA,U.S. - English localization
+4,P21163-B21,HPE XL225n Gen10+ 1U Node CTO Svr
+4,P21163-B21  0D1,Factory integrated
+4,P21163-B21  ABA,U.S. - English localization
+4,P24269-L21,HPE XL225n Gen10+ AMD EPYC 7302P FIO Kit
+32,P07644-H21,HPE 32GB 2Rx8 PC4-3200AA-R Smart Kit
+32,P07644-H21  0D1,Factory integrated
+4,P20260-B21,HPE XL2xxn Gen10+ LP Left Riser Kit
+4,P20260-B21  0D1,Factory integrated
+4,P23664-H21,HPE IB HDR/EN 200Gb 1p QSFP56 Adptr
+4,P23664-H21  0D1,Factory integrated
+4,P20264-B21,HPE XL22xn G10+ LP CPU2 Right Riser Kit
+4,P20264-B21  0D1,Factory integrated
+4,R4K46A,HPE Slingshot 200Gb Card for Cray System
+4,R4K46A      0D1,Factory integrated
+2,876935-B21,HPE 1800W - 2200W FS Plat Ht Plg PS Kit
+2,876935-B21  0D1,Factory integrated
+2,Q7F59A,HPE Jmp Crd C15 US 0.76m Blk
+2,Q7F59A      0D1,Factory integrated
+1,P20283-B21,HPE n2x00 Gen10+ Flex Slot PIB
+1,P20283-B21  0D1,Factory integrated
+1,P25006-B21,HPE n2x00 Gen10+ 2U Shelf Mount Rail Kit
+1,P25006-B21  0D1,Factory integrated
+NCN-M
+2,R4K99A,HPE Cray EX Master Server Node
+2,R4K99A      0D1,Factory integrated
+2,R5Q43A,HPE Cray Sys Mgmt Supercomp FIO SW
+2,R5R45A,HPE Cray OS Supercomp FIO SW
+Aruba 6410
+1,R0X27A,Aruba 6410 Swch
+1,R0X27A      0D1,Factory integrated
+1,R0X31A,Aruba 6400 Management Module
+1,R0X31A      0D1,Factory integrated
+3,R0X44A,Aruba 6400 48p 10G/25G SFP28 Mod
+3,R0X44A      0D1,Factory integrated
+5,R0X45A,Aruba 6400 12p 40G/100G QSFP28 Mod
+5,R0X45A      0D1,Factory integrated
+2,R0X35A,Aruba 6400 1800W PS/C16 Accessory
+2,R0X35A      0D1,Factory integrated
+2,R0X35A      ABA,U.S. - English localization
+NCN-W
+10,R4L00A,HPE Cray EX Worker Server Node
+10,R4L00A      0D1,Factory integrated
+20,R4K46A,HPE Slingshot 200Gb Card for Cray System
+20,R4K46A      0D1,Factory integrated
+10,R5Q43A,HPE Cray Sys Mgmt Supercomp FIO SW
+10,R5R45A,HPE Cray OS Supercomp FIO SW
+Login
+4,P14278-B21,HPE DL385 Gen10+ 8SFF CTO Svr
+4,P14278-B21  0D1,Factory integrated
+4,P14278-B21  ABA,U.S. - English localization
+4,R4L68A,HPE Cray EX User Access Node FIO Config
+4,P17546-L21,HPE DL385 Gen10+ AMD EPYC 7702 FIO Kit
+4,P17546-B21,HPE DL385 Gen10+ AMD EPYC 7702 Kit
+4,P17546-B21  0D1,Factory integrated
+64,P07650-B21,HPE 64GB 2Rx4 PC4-3200AA-R Smart Kit
+64,P07650-B21  0D1,Factory integrated
+4,P14590-B21,HPE DL38X Gen10+ 2x16 Slot 2/3 Riser Kit
+4,P14590-B21  0D1,Factory integrated
+4,P23664-B21,HPE IB HDR/EN 200Gb 1p QSFP56 Adptr
+4,P23664-B21  0D1,Factory integrated
+4,R4K46A,HPE Slingshot 200Gb Card for Cray System
+4,R4K46A      0D1,Factory integrated
+4,P01366-B21,HPE 96W Smart Storage Battery 145mm Cbl
+4,P01366-B21  0D1,Factory integrated
+4,804331-B21,HPE Smart Array P408i-a SR Gen10 Ctrlr
+4,804331-B21  0D1,Factory integrated
+4,P08449-B21,INT I350 1GbE 4p BASE-T OCP3 Adptr
+4,P08449-B21  0D1,Factory integrated
+4,P14608-B21,HPE DL38X Gen10+ Max Perf Fan Kit
+4,P14608-B21  0D1,Factory integrated
+8,865414-B21,HPE 800W FS Plat Ht Plg LH Pwr Sply Kit
+8,865414-B21  0D1,Factory integrated
+4,R5Q43A,HPE Cray Sys Mgmt Supercomp FIO SW
+4,R5R45A,HPE Cray OS Supercomp FIO SW
+4,R6A49A,HPE Cray PE x86 FIO SW
+4,P22018-B21,HPE DL38X Gen10+ 2U SFF EI Rail Kit
+4,P22018-B21  0D1,Factory integrated
+NCN-S 7.68 TB
+8,R4L01A,HPE Cray EX Utility Storage Server Node
+8,R4L01A      0D1,Factory integrated
+64,P18430-H21,HPE 7.68TB SATA RI SFF SC MV SSD
+64,P18430-H21  0D1,Factory integrated
+8,R5Q43A,HPE Cray Sys Mgmt Supercomp FIO SW
+8,R5R45A,HPE Cray OS Supercomp FIO SW
+Aruba 6300M
+2,JL762A,Aruba 6300M 48G Pwr2Prt 2F 1PS Bdl
+2,JL762A      0D1,Factory integrated
+2,JL762A      ABA,U.S. - English localization
+2,JL760A,Aruba X371 12VDC 250W Pwr2Prt PS
+2,JL760A      0D1,Factory integrated
+2,JL760A      B2B,JmpCbl-NA/JP/TW
+Slingshot 
+4,R4K41A,HPE Slingshot 1U Switch for Cray System
+4,R4K41A      0D1,Factory integrated
+Rack 4
+GW DVS
+1,P19878-B21,HPE Apollo n2600 Gen10+ SFF CTO Chassis
+1,P19878-B21  0D1,Factory integrated
+1,P19878-B21  ABA,U.S. - English localization
+4,P21163-B21,HPE XL225n Gen10+ 1U Node CTO Svr
+4,P21163-B21  0D1,Factory integrated
+4,P21163-B21  ABA,U.S. - English localization
+4,P24269-L21,HPE XL225n Gen10+ AMD EPYC 7302P FIO Kit
+32,P07644-H21,HPE 32GB 2Rx8 PC4-3200AA-R Smart Kit
+32,P07644-H21  0D1,Factory integrated
+4,P20260-B21,HPE XL2xxn Gen10+ LP Left Riser Kit
+4,P20260-B21  0D1,Factory integrated
+4,P23664-H21,HPE IB HDR/EN 200Gb 1p QSFP56 Adptr
+4,P23664-H21  0D1,Factory integrated
+4,P20264-B21,HPE XL22xn G10+ LP CPU2 Right Riser Kit
+4,P20264-B21  0D1,Factory integrated
+4,R4K46A,HPE Slingshot 200Gb Card for Cray System
+4,R4K46A      0D1,Factory integrated
+2,876935-B21,HPE 1800W - 2200W FS Plat Ht Plg PS Kit
+2,876935-B21  0D1,Factory integrated
+2,Q7F59A,HPE Jmp Crd C15 US 0.76m Blk
+2,Q7F59A      0D1,Factory integrated
+1,P20283-B21,HPE n2x00 Gen10+ Flex Slot PIB
+1,P20283-B21  0D1,Factory integrated
+1,P25006-B21,HPE n2x00 Gen10+ 2U Shelf Mount Rail Kit
+1,P25006-B21  0D1,Factory integrated
+NCN-M
+1,R4K99A,HPE Cray EX Master Server Node
+1,R4K99A      0D1,Factory integrated
+1,R5Q43A,HPE Cray Sys Mgmt Supercomp FIO SW
+1,R5R45A,HPE Cray OS Supercomp FIO SW
+NCN-W
+10,R4L00A,HPE Cray EX Worker Server Node
+10,R4L00A      0D1,Factory integrated
+20,R4K46A,HPE Slingshot 200Gb Card for Cray System
+20,R4K46A      0D1,Factory integrated
+10,R5Q43A,HPE Cray Sys Mgmt Supercomp FIO SW
+10,R5R45A,HPE Cray OS Supercomp FIO SW
+Login
+4,P14278-B21,HPE DL385 Gen10+ 8SFF CTO Svr
+4,P14278-B21  0D1,Factory integrated
+4,P14278-B21  ABA,U.S. - English localization
+4,R4L68A,HPE Cray EX User Access Node FIO Config
+4,P17546-L21,HPE DL385 Gen10+ AMD EPYC 7702 FIO Kit
+4,P17546-B21,HPE DL385 Gen10+ AMD EPYC 7702 Kit
+4,P17546-B21  0D1,Factory integrated
+64,P07650-B21,HPE 64GB 2Rx4 PC4-3200AA-R Smart Kit
+64,P07650-B21  0D1,Factory integrated
+4,P14590-B21,HPE DL38X Gen10+ 2x16 Slot 2/3 Riser Kit
+4,P14590-B21  0D1,Factory integrated
+4,P23664-B21,HPE IB HDR/EN 200Gb 1p QSFP56 Adptr
+4,P23664-B21  0D1,Factory integrated
+4,R4K46A,HPE Slingshot 200Gb Card for Cray System
+4,R4K46A      0D1,Factory integrated
+4,P01366-B21,HPE 96W Smart Storage Battery 145mm Cbl
+4,P01366-B21  0D1,Factory integrated
+4,804331-B21,HPE Smart Array P408i-a SR Gen10 Ctrlr
+4,804331-B21  0D1,Factory integrated
+4,P08449-B21,INT I350 1GbE 4p BASE-T OCP3 Adptr
+4,P08449-B21  0D1,Factory integrated
+4,P14608-B21,HPE DL38X Gen10+ Max Perf Fan Kit
+4,P14608-B21  0D1,Factory integrated
+8,865414-B21,HPE 800W FS Plat Ht Plg LH Pwr Sply Kit
+8,865414-B21  0D1,Factory integrated
+4,R5Q43A,HPE Cray Sys Mgmt Supercomp FIO SW
+4,R5R45A,HPE Cray OS Supercomp FIO SW
+4,R6A49A,HPE Cray PE x86 FIO SW
+4,P22018-B21,HPE DL38X Gen10+ 2U SFF EI Rail Kit
+4,P22018-B21  0D1,Factory integrated
+NCN-S 7.68 TB
+9,R4L01A,HPE Cray EX Utility Storage Server Node
+9,R4L01A      0D1,Factory integrated
+72,P18430-H21,HPE 7.68TB SATA RI SFF SC MV SSD
+72,P18430-H21  0D1,Factory integrated
+9,R5Q43A,HPE Cray Sys Mgmt Supercomp FIO SW
+9,R5R45A,HPE Cray OS Supercomp FIO SW
+Aruba 6300M
+4,JL762A,Aruba 6300M 48G Pwr2Prt 2F 1PS Bdl
+4,JL762A      0D1,Factory integrated
+4,JL762A      ABA,U.S. - English localization
+4,JL760A,Aruba X371 12VDC 250W Pwr2Prt PS
+4,JL760A      0D1,Factory integrated
+4,JL760A      B2B,JmpCbl-NA/JP/TW
+Slingshot 
+4,R4K41A,HPE Slingshot 1U Switch for Cray System
+4,R4K41A      0D1,Factory integrated

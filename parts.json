@@ -95,7 +95,6 @@
         "bomQty": 1,
         "bomSKU": "JL762A",
         "bomDesc": "Aruba 6300M 48-port 1GbE and 4-port SFP56 Power-to-Port 2 Fan Trays 1 PSU Bundle"
-
       },
       {
         "bomQty": 1,
@@ -128,6 +127,43 @@
         "bomQty": 2,
         "bomSKU": "R4K46A",
         "bomDesc": "HPE Slingshot 200Gb 1-port PCIe Adapter for Cray System"
+      }
+    ]
+  },
+  {
+    "itemName": "MDU",
+    "itemColor": "#467599",
+    "itemHeight": "1",
+    "bomItems": [
+      {
+        "bomQty": 1,
+        "bomSKU": "R4M28A",
+        "bomDesc": "Cray Cls 2U24 MDU1 Storage Controller"
+      },
+      {
+        "bomQty": 1,
+        "bomSKU": "R4M28A      0D1",
+        "bomDesc": "Factory integrated"
+      },
+      {
+        "bomQty": 24,
+        "bomSKU": "R4M02A",
+        "bomDesc": "Cray Cls 1.6TB NVMex4 MU SFF U.2 Wc SSD"
+      },
+      {
+        "bomQty": 24,
+        "bomSKU": "R4M02A      0D1",
+        "bomDesc": "Factory integrated"
+      },
+      {
+        "bomQty": 2,
+        "bomSKU": "R4N85A",
+        "bomDesc": "Cray Cls HDR 200Gb 1P QSFP PCIe4 Adptr"
+      },
+      {
+        "bomQty": 2,
+        "bomSKU": "R4N85A      0D1",
+        "bomDesc": "Factory integrated"
       }
     ]
   }

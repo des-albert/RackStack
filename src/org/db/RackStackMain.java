@@ -12,7 +12,7 @@ public class RackStackMain extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("RackStack.fxml"));
         primaryStage.setTitle("RackStack");
-        primaryStage.setScene(new Scene(root, 1200, 900));
+        primaryStage.setScene(new Scene(root, 1200, 1000));
         primaryStage.show();
     }
 

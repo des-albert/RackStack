@@ -2,9 +2,8 @@ package org.db;
 
 public class RackTotal {
 
-    private String itemName;
     private int itemTotal;
-    private String itemColor;
+    private final String itemColor;
 
     RackTotal(String color) {
         itemTotal = 0;
@@ -15,7 +14,5 @@ public class RackTotal {
     public String getItemColor() { return itemColor; }
     void increment(int add) { itemTotal += add; }
     void decrement() { itemTotal -= 1; }
-    void setItemName(String name) { itemName = name; }
-    void setItemTotal(int total) { itemTotal = total; }
-    void setItemColor(String color) { itemColor = color; }
+
 }

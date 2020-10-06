@@ -20,7 +20,8 @@
       <ListView fx:id="listViewParts" layoutX="36.0" layoutY="20.0" onDragDetected="#partDragDetected" prefHeight="350.0" prefWidth="90.0" />
       <ListView fx:id="listViewTotal" layoutX="138.0" layoutY="20.0" prefHeight="350.0" prefWidth="30.0" />
       <Button fx:id="buttonLoad" layoutX="28.0" layoutY="724.0" mnemonicParsing="false" onAction="#ButtonLoadAction" text="Load" />
-      <Label layoutX="17.0" layoutY="617.0" styleClass="label-title" stylesheets="@../../css/style.css" text="RackStack" />
+      <Label layoutX="28.0" layoutY="647.0" styleClass="label-title" stylesheets="@../../css/style.css" text="RackStack" />
       <Label layoutX="60.0" layoutY="686.0" styleClass="label-plain" stylesheets="@../../css/style.css" text="Files" />
+      <Button fx:id="buttonLoadExcel" layoutX="38.0" layoutY="606.0" mnemonicParsing="false" onAction="#ButtonLoadExcelOnAction" text="Load Excel" />
    </children>
 </AnchorPane>

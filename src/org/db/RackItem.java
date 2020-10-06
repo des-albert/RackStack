@@ -1,14 +1,13 @@
 package org.db;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class RackItem implements Serializable {
     private final int id;
     private final String parentId;
     private String itemName;
     private String itemColor;
-    private int itemHeight;
+    private final int itemHeight;
     private int itemIndex;
 
     RackItem (String parent, String name, String color, int height) {
@@ -20,7 +19,7 @@ public class RackItem implements Serializable {
         itemIndex = -1;
     }
 
-    RackItem( Part part) {
+    RackItem(Part part) {
         id = hashCode();
         parentId = null;
         itemName = part.getItemName();
@@ -37,7 +36,6 @@ public class RackItem implements Serializable {
 
     void setItemName(String name) { itemName = name; }
     void setItemColor(String color) { itemColor = color; }
-    void setItemHeight(int height) { itemHeight = height; }
     void setItemIndex(int index) { itemIndex = index; }
 
 }
